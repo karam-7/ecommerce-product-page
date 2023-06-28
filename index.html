@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | E-commerce product page</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- ===========================Start MAIN AREA======================= -->
+    <main id="site">
+      <!-- ===NAVBAR AREA==== -->
+      <nav id="bar">
+        <div class="overlay"></div>
+        <button id="ham" onclick="toggleMenu()">
+          <img src="./images/icon-menu.svg" alt="open" id="open" />
+          <img src="./images/icon-close.svg" alt="close" id="close" />
+        </button>
+        <img src="./images/logo.svg" alt="" class="logo" />
+        <ul id="bar-ul">
+          <li class="bar-li">
+            <a href="#" class="li-a">Collections</a>
+          </li>
+          <li class="bar-li">
+            <a href="#" class="li-a">Men</a>
+          </li>
+          <li class="bar-li">
+            <a href="#" class="li-a">Women</a>
+          </li>
+          <li class="bar-li">
+            <a href="#" class="li-a">About</a>
+          </li>
+          <li class="bar-li">
+            <a href="#" class="li-a">Contact</a>
+          </li>
+        </ul>
+        <div class="profile">
+          <div class="cart">
+            <a
+              ><img src="./images/icon-cart.svg" alt="cart" class="cart-img" />
+              <sup id="cart-sup">0</sup>
+            </a>
+            <div class="menu">
+              <span class="menu-span">Cart</span>
+              <hr class="hr" />
+              <span class="empty">Your cart is empty</span>
+              <div class="detail">
+                <div class="detail-div">
+                  <img
+                    src="./images/image-product-1-thumbnail.jpg"
+                    alt="product"
+                    class="detail-img"
+                  />
+                  <div class="item">
+                    <span class="item-span"
+                      >Fall Limited Edition Sneakers
+                    </span>
+                    <span class="item-span"
+                      >$125.00 x <span id="num">1</span
+                      ><b id="total">$125.00</b></span
+                    >
+                  </div>
+                  <img
+                    src="./images/icon-delete.svg"
+                    alt="delete"
+                    id="delete"
+                  />
+                </div>
+                <button class="btn" type="submit">Checkout</button>
+              </div>
+            </div>
+          </div>
+          <img src="./images/image-avatar.png" alt="Person" class="person" />
+        </div>
+      </nav>
+
+      <!-- ======SECTION AREA===== -->
+      <section class="product">
+        <div class="image">
+          <button class="img-btn">
+            <img src="" alt="Main-Image" class="main-img" />
+          </button>
+          <div class="slider">
+            <div class="popup">
+              <img
+                src="./images/icon-close.svg"
+                alt="close"
+                class="slider-close"
+              />
+              <div class="slider-div">
+                <img
+                  src="./images/icon-previous.svg"
+                  alt="previous"
+                  class="previous"
+                />
+                <img src="" alt="image" class="slider-img" />
+                <img src="./images/icon-next.svg" alt="next" class="next" />
+              </div>
+              <div class="slider-thumbnails">
+                <button id="slider-one" class="thumb-btn">
+                  <img
+                    src="./images/image-product-1-thumbnail.jpg"
+                    alt="thumbnails"
+                    class="btn-img"
+                  />
+                </button>
+                <button id="slider-two" class="thumb-btn">
+                  <img
+                    src="./images/image-product-2-thumbnail.jpg"
+                    alt="thumbnails"
+                    class="btn-img"
+                  />
+                </button>
+                <button id="slider-three" class="thumb-btn">
+                  <img
+                    src="./images/image-product-3-thumbnail.jpg"
+                    alt="thumbnails"
+                    class="btn-img"
+                  />
+                </button>
+                <button id="slider-four" class="thumb-btn">
+                  <img
+                    src="./images/image-product-4-thumbnail.jpg"
+                    alt="thumbnails"
+                    class="btn-img"
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="thumbnails">
+            <button id="one" class="thumb-btn">
+              <img
+                src="./images/image-product-1-thumbnail.jpg"
+                alt="thumbnails"
+                class="btn-img"
+              />
+            </button>
+            <button id="two" class="thumb-btn">
+              <img
+                src="./images/image-product-2-thumbnail.jpg"
+                alt="thumbnails"
+                class="btn-img"
+              />
+            </button>
+            <button id="three" class="thumb-btn">
+              <img
+                src="./images/image-product-3-thumbnail.jpg"
+                alt="thumbnails"
+                class="btn-img"
+              />
+            </button>
+            <button id="four" class="thumb-btn">
+              <img
+                src="./images/image-product-4-thumbnail.jpg"
+                alt="thumbnails"
+                class="btn-img"
+              />
+            </button>
+          </div>
+        </div>
+        <div class="info">
+          <span class="info-span">Sneaker Company</span>
+          <h1 class="info-h1">Fall Limited Edition Sneakers</h1>
+          <p class="info-para">
+            These low-profile sneakers are your perfect casual wear companion.
+            Featuring a durable rubber outer sole, they’ll withstand everything
+            the weather can offer.
+          </p>
+          <div class="cost">
+          <h2 class="info-h2">$125.00 <span class="h2-span"> 50%</span></h2>
+          <span class="price-span">$250.00</span>
+          </div>
+          <div class="buy">
+            <div class="buy-div">
+              <img
+                src="./images/icon-minus.svg"
+                alt="minus"
+                id="minus"
+                class="h3-img"
+              />
+              <h3 class="buy-h3">0</h3>
+              <img
+                src="./images/icon-plus.svg"
+                alt="plus"
+                id="plus"
+                class="h3-img"
+              />
+            </div>
+            <button type="submit" id="sum">
+              <img src="./images/icon-cart1.svg" alt="cart" class="sum-img" />
+              Add to cart
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- ===========================END MAIN AREA======================= -->
+    <!-- ================================START FOOTER AREA====================== -->
+    <footer class="foot">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="http://karam-portfolio.liveblog365.com" target="_blank">
+        KARAM SINGH</a
+      >
+    </footer>
+    <!-- ================================END FOOTER AREA========================= -->
+    <script src="./script.js"></script>
+  </body>
+</html>
